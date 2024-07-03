@@ -1,0 +1,85 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resources\Images\icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Images\dragon.png" />
+    <None Remove="Resources\Images\icon.svg" />
+    <None Remove="Resources\Images\iis.png" />
+    <None Remove="Resources\Images\iisinfo.png" />
+    <None Remove="Resources\Images\iisprev.png" />
+    <None Remove="Resources\Images\iss.jpg" />
+    <None Remove="Resources\Images\mainmenu.png" />
+    <None Remove="Resources\Images\mars.jpg" />
+    <None Remove="Resources\Images\marsinfo.png" />
+    <None Remove="Resources\Images\marsprev.png" />
+    <None Remove="Resources\Images\moon.jpg" />
+    <None Remove="Resources\Images\mooninfo.png" />
+    <None Remove="Resources\Images\moonprev.png" />
+    <None Remove="Resources\Images\moon_why-mobile.jpg" />
+    <None Remove="Resources\Images\orbit.jpeg" />
+    <None Remove="Resources\Images\orbitinfo.png" />
+    <None Remove="Resources\Images\orbitprev.png" />
+    <None Remove="Resources\Images\pic1.jpg" />
+    <None Remove="Resources\Images\pic2.jpg" />
+    <None Remove="Resources\Images\pic4.jpg" />
+    <None Remove="Resources\Images\pic5.jpg" />
+    <None Remove="Resources\Images\preview.png" />
+    <None Remove="Resources\Images\starship.png" />
+    <None Remove="Resources\pic3.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Images\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Expression.Interaction" Version="3.0.40218" />
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.6.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="3.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\dragon.png" />
+    <Resource Include="Resources\Images\icon.svg" />
+    <Resource Include="Resources\Images\iis.png" />
+    <Resource Include="Resources\Images\iisinfo.png" />
+    <Resource Include="Resources\Images\iisprev.png" />
+    <Resource Include="Resources\Images\iss.jpg" />
+    <Resource Include="Resources\Images\mainmenu.png" />
+    <Resource Include="Resources\Images\mars.jpg" />
+    <Resource Include="Resources\Images\marsinfo.png" />
+    <Resource Include="Resources\Images\marsprev.png" />
+    <Resource Include="Resources\Images\moon.jpg" />
+    <Resource Include="Resources\Images\mooninfo.png" />
+    <Resource Include="Resources\Images\moonprev.png" />
+    <Resource Include="Resources\Images\moon_why-mobile.jpg" />
+    <Resource Include="Resources\Images\orbitinfo.png" />
+    <Resource Include="Resources\Images\orbitprev.png" />
+    <Resource Include="Resources\Images\pic1.jpg" />
+    <Resource Include="Resources\Images\pic2.jpg" />
+    <Resource Include="Resources\Images\pic3.jpg" />
+    <Resource Include="Resources\Images\pic4.jpg" />
+    <Resource Include="Resources\Images\pic5.jpg" />
+    <Resource Include="Resources\Images\preview.png" />
+    <Resource Include="Resources\Images\starship.png" />
+  </ItemGroup>
+
+</Project>

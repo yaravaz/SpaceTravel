@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="spacetravel.Views.Controls.MissionsPrev.Mars"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:spacetravel.Views.Controls.MissionsPrev"
+             mc:Ignorable="d" Style="{StaticResource Page_Style}"
+             d:DesignHeight="500" d:DesignWidth="800">
+    <Grid>
+        <Border Height="270" Width="780" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,183,0,0">
+            <Border.Background>
+                <ImageBrush ImageSource="/Resources/Images/marsprev.png" Stretch="UniformToFill" AlignmentX="Right"/>
+            </Border.Background>
+        </Border>
+        <TextBlock Text="Mars" Foreground="White" Panel.ZIndex="7" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="D-DIN" FontSize="60" Margin="30,30,500,0"/>
+        <TextBlock Text="At an average distance of 140 million miles, Mars is one of Earth's closest habitable neighbors. Mars is about half again as far from the Sun as Earth is, so it still has decent sunlight. It is a little cold, but we can warm it up." Foreground="White" Panel.ZIndex="7" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="D-DIN" Margin="30,140,0,0" FontSize="16" Width="339" TextWrapping="Wrap"/>
+    </Grid>
+</UserControl>

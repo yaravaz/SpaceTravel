@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>D:\course_prog\spacetravel\spacetravel\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\Controls\AddTourPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\AdminProfile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\Home.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\LoginForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\Missions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\MissionsPrev\Def.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\MissionsPrev\Iss.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\MissionsPrev\Mars.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\MissionsPrev\Moon.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\MissionsPrev\Orbit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\Mission\IssPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\Mission\MarsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\Mission\MoonPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\Mission\OrbitPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\Profile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\RegistrationForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\TourInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\Tours.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Controls\UserProfile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\MenuWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Resources\AppResources.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Styles\ButtonMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Styles\Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Utils\DataTemplate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\AddTourPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\AdminProfile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\Home.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\LoginForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\Missions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\MissionsPrev\Def.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\MissionsPrev\Iss.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\MissionsPrev\Mars.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\MissionsPrev\Moon.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\MissionsPrev\Orbit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\Mission\IssPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\Mission\MarsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\Mission\MoonPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\Mission\OrbitPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\Profile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\TourInfo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\Tours.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\UserProfile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Controls\RegistrationForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\MenuWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

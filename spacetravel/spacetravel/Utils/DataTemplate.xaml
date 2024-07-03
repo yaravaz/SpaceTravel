@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vm="clr-namespace:spacetravel.ViewModels.Menu"
+                    xmlns:view="clr-namespace:spacetravel.Views.Controls">
+
+    <DataTemplate DataType="{x:Type vm:HomeViewModel}">
+        <view:Home />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:MissionsViewModel}">
+        <view:Missions/>
+    </DataTemplate>
+</ResourceDictionary>
