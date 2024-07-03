@@ -1,0 +1,110 @@
+﻿<UserControl x:Class="spacetravel.Views.Controls.Mission.OrbitPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:spacetravel.Views.Controls.Mission"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             mc:Ignorable="d" Style="{StaticResource Page_Style}"
+             d:DesignHeight="2000" d:DesignWidth="800">
+    <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Hidden">
+
+        <Grid Height="2000">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="2.5*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="2.5*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="2.5*"/>
+            </Grid.RowDefinitions>
+            <materialDesign:PackIcon Kind="ArrowLeft" Margin="10,20,0,0" Width="30" Height="30" Foreground="White">
+                <materialDesign:PackIcon.Style>
+                    <Style TargetType="materialDesign:PackIcon">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor" Value="Hand" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </materialDesign:PackIcon.Style>
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="MouseDown">
+                        <i:InvokeCommandAction Command="{Binding GoBack}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </materialDesign:PackIcon>
+            <TextBlock Text="Orbit" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40" Foreground="white" Grid.ColumnSpan="2"/>
+            <Image Grid.Row="1" Source="pack://application:,,,/Resources/Images/orbitinfo.png"/>
+            <Grid Grid.Row="1" Grid.Column="1" Margin="30 100">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.3*"/>
+                    <RowDefinition Height="0.1*"/>
+                    <RowDefinition Height="0.1*"/>
+                    <RowDefinition Height="0.3*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{Binding DescMissionField}" Foreground="White" FontFamily="D-DIN" FontSize="12" TextWrapping="Wrap" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="0,0,50,0"/>
+
+                <TextBlock Text="Duration" FontFamily="D-DIN" Grid.Row ="1" Foreground="White" FontSize="16"/>
+                <TextBlock Text="{Binding DurationField}" HorizontalAlignment="Left" FontFamily="D-DIN" Grid.Column="1" Grid.Row ="1" Foreground="White" FontSize="16"/>
+
+                <TextBlock Text="Altitude" FontFamily="D-DIN" Grid.Row ="2" Foreground="White" FontSize="16"/>
+                <TextBlock Text="{Binding AltituteField}" HorizontalAlignment="Left" FontFamily="D-DIN" Grid.Column="1" Grid.Row ="2" Foreground="White" FontSize="16"/>
+
+                <TextBlock Text="{Binding PriceField}" FontFamily="D-DIN" Grid.Row ="3" Foreground="White" FontSize="25"/>
+            </Grid>
+            <materialDesign:PackIcon Kind="ChevronDown" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0 -20 0 0" Width="50" Height="50" Foreground="White"/>
+            <TextBlock Text="Vehicle" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="30" Foreground="white" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Image Grid.Column="1" Grid.Row="3" Source="pack://application:,,,/Resources/Images/dragon.png" Margin="50"/>
+            <Grid Grid.Row="3" Grid.Column="0" Margin="30 100">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.3*"/>
+                    <RowDefinition Height="0.1*"/>
+                    <RowDefinition Height="0.1*"/>
+                    <RowDefinition Height="0.1*"/>
+                    <RowDefinition Height="0.3*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{Binding DescShipField}" Foreground="White" FontFamily="D-DIN" FontSize="12" TextWrapping="Wrap" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="0,0,50,0"/>
+
+                <TextBlock Text="Capacity" FontFamily="D-DIN" Grid.Row ="1" Foreground="White" FontSize="16"/>
+                <TextBlock Text="{Binding CapacityField}" HorizontalAlignment="Left" FontFamily="D-DIN" Grid.Column="1" Grid.Row ="1" Foreground="White" FontSize="16"/>
+
+                <TextBlock Text="Diameter" FontFamily="D-DIN" Grid.Row ="2" Foreground="White" FontSize="16"/>
+                <TextBlock Text="{Binding DiameterField}" HorizontalAlignment="Left" FontFamily="D-DIN" Grid.Column="1" Grid.Row ="2" Foreground="White" FontSize="16"/>
+
+                <TextBlock Text="Height" FontFamily="D-DIN" Grid.Row ="3" Foreground="White" FontSize="16"/>
+                <TextBlock Text="{Binding HeightField}" HorizontalAlignment="Left" FontFamily="D-DIN" Grid.Column="1" Grid.Row ="3" Foreground="White" FontSize="16"/>
+
+                <TextBlock Text="Payload capacity" FontFamily="D-DIN" Grid.Row ="4" Foreground="White" FontSize="16"/>
+                <TextBlock Text="{Binding PayloadField}" HorizontalAlignment="Left" FontFamily="D-DIN" Grid.Column="1" Grid.Row ="4" Foreground="White" FontSize="16"/>
+            </Grid>
+            <TextBlock Text="Book a flight" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="30" Foreground="white" Grid.ColumnSpan="2" Grid.Row="4"/>
+            <TextBlock Text="To book, you need to fill in the information, the price of the flight will depend on it*" Margin="0 10"  HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="12" Foreground="white" Grid.ColumnSpan="2" Grid.Row="5"/>
+            <DatePicker IsTodayHighlighted="True" Focusable="False" Grid.Row="5" VerticalAlignment="Top" Margin="30 100" Height="60" Foreground="White" SelectedDate="{Binding SelectedDate}" FirstDayOfWeek="Monday" Background="#FF2B2B2B" FontFamily="D-DIN" FontSize="16"/>
+            <TextBox Text="{Binding WeightField, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource TextBoxStyle}" FontSize="15" Foreground="White" Grid.Row="5" Height="60" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,200,0,0"  Background="#FF2B2B2B" Tag="your weight" Width="340"/>
+            <TextBlock Text="*the coefficient of price increase will depend on your weight" Margin="30 270"  HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12" Foreground="white" Grid.Row="5"/>
+            <TextBlock Text="{Binding ErrorText}" Margin="30 300 0 0"  HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12" Foreground="#DDFF6565" Grid.Row="5"/>
+            <TextBlock Text="Total price" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50 90" FontSize="30" Foreground="white" Grid.Column="1" Grid.Row="5"/>
+            <TextBlock Text="{Binding TotalPrice}" HorizontalAlignment="Left" VerticalAlignment="top" Margin="50 150" FontSize="30" Foreground="white" Grid.Column="1" Grid.Row="5"/>
+
+            <Button Command="{Binding BookCommand}" Visibility="{Binding CurrVisibility}" Grid.Row="5" Grid.ColumnSpan="2" Width="250" VerticalAlignment="Bottom" Margin="0 0 0 60" Content="Book" FontFamily="D-DIN" FontSize="18" Height="40" BorderThickness="1,1,1,1">
+                <Button.Effect>
+                    <DropShadowEffect Color="White" BlurRadius="10" ShadowDepth="0"/>
+                </Button.Effect>
+            </Button>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

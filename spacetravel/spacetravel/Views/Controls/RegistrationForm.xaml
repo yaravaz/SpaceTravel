@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="spacetravel.Views.RegistrationForm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:spacetravel.ViewModels.Auth"
+             xmlns:local="clr-namespace:spacetravel.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="800">
+
+    <UserControl.DataContext>
+        <vm:RegistrationFormViewModel/>
+    </UserControl.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Button Command="{Binding OnOpenLogInPageCommand}" Content="Log in" HorizontalAlignment="Left" Margin="82,42,0,0" VerticalAlignment="Top" Background="Transparent" Foreground="White" FontSize="18" Opacity="0.3" BorderThickness="0,0,0,3">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button IsEnabled="False" Content="Sign up" HorizontalAlignment="Left" Margin="167,42,0,0" VerticalAlignment="Top" Background="Transparent" Foreground="White" FontSize="18" Opacity="0.8" BorderThickness="0,0,0,3"/>
+        <Button Command="{Binding OnSignUpCommand}" Content="Create" Margin="92,504,250,46" FontFamily="D-DIN" FontSize="18" Height="40" BorderThickness="1,1,1,1">
+            <Button.Effect>
+                <DropShadowEffect Color="White" BlurRadius="10" ShadowDepth="0"/>
+            </Button.Effect>
+        </Button>
+        <TextBox Text="{Binding EmailField}" x:Name="email" Style="{StaticResource TextBoxStyle}" Tag="email" FontSize="15" Foreground="White" Grid.Row ="0" Height="60" Margin="94,279,107,251" Background="#FF2B2B2B"/>
+        <TextBox Text="{Binding LoginField}" x:Name="login" Style="{StaticResource TextBoxStyle}" Tag="login" FontSize="15" Foreground="White" Grid.Row ="0" Height="60" Margin="94,216,107,314" Background="#FF2B2B2B"/>
+        <TextBox Text="{Binding PasswordField}" x:Name="password" Style="{StaticResource TextBoxStyle}" Tag="password" FontSize="15" Foreground="White" Grid.Row ="0" Height="60" Margin="94,342,107,188" Background="#FF2B2B2B"/>
+        <TextBox Text="{Binding ConfPasswordField}" x:Name="secpassword" Style="{StaticResource TextBoxStyle}" Tag="repeat the password" FontSize="15" Foreground="White" Grid.Row ="0" Height="60" Margin="94,405,107,125" Background="#FF2B2B2B"/>
+        <Label Content="Let's create account!" HorizontalAlignment="Left" Margin="94,111,0,0" VerticalAlignment="Top" Height="55" Width="399" FontSize="36" Foreground="#DDFFFFFF" FontFamily="D-DIN"/>
+        <Label Content="Enter the data to continue" HorizontalAlignment="Left" Margin="94,166,0,0" VerticalAlignment="Top" Width="210" Foreground="#DDC3C3C3" FontFamily="D-DIN" FontSize="14"/>
+        <TextBlock Text="{Binding ErrorText}" HorizontalAlignment="Left" Margin="92,461,0,0" VerticalAlignment="Top" TextWrapping="Wrap"  Width="282" FontSize="14" Foreground="#DDFF6565" Visibility="Visible"/>
+    </Grid>
+</UserControl>

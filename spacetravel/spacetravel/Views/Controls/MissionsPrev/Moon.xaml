@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="spacetravel.Views.Controls.MissionsPrev.Moon"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:spacetravel.Views.Controls.MissionsPrev"
+             mc:Ignorable="d" Style="{StaticResource Page_Style}"
+             d:DesignHeight="500" d:DesignWidth="800">
+    <Grid>
+        <Image Source="/Resources/Images/moonprev.png" Stretch="UniformToFill" Width="600" HorizontalAlignment="Left" VerticalAlignment="Bottom" Opacity="0.8"/>
+        <TextBlock Text="Moon" Foreground="White" Panel.ZIndex="7" HorizontalAlignment="Right" VerticalAlignment="Top" FontFamily="D-DIN" FontSize="60" Margin="0,200,60,0"/>
+        <TextBlock Text="The Moon is one of Earth’s closest habitable neighbors and provides an opportunity to gain valuable experience for missions to Mars and beyond." Foreground="White" Panel.ZIndex="7" HorizontalAlignment="Right" VerticalAlignment="Top" FontFamily="D-DIN" Margin="0,304,60,0" FontSize="16" Width="278" TextWrapping="Wrap" TextAlignment="Right"/>
+    </Grid>
+</UserControl>

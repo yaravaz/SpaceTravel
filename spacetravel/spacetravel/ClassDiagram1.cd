@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="spacetravel.Models.Admin">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="System.Object" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14" Y="1.75" />
+        <Point X="14" Y="0.382" />
+        <Point X="3.5" Y="0.382" />
+        <Point X="3.5" Y="0.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAAAAAAAAAAACAAACAAAQAAAAEAA=</HashCode>
+      <FileName>Models\Admin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="spacetravel.Models.Booking">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhAABAAQAIAAAAEAAAAAQAAAAAAAADAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Booking.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="spacetravel.Models.Mission">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAQAiAAAAAAAAgAQAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Models\Mission.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="spacetravel.Models.Spaceship">
+    <Position X="5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAABAAgAAAAAAAAAAQCAAAAAAAAAAABAAAAIAA=</HashCode>
+      <FileName>Models\Spaceship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="spacetravel.Models.Tour">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAgAAAAEAAAAAQAAAAAABADAQAEAAAAAAA=</HashCode>
+      <FileName>Models\Tour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="spacetravel.Models.User">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAgAAAACAAACAAAQAAAAEAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="spacetravel.Models.Data.ApplicationContext">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAACAAAQAgAAAAAAAgAQAAACAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\Data\ApplicationContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="spacetravel.Utils.Global">
+    <Position X="10.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAQAAgACEAAAAAAAAAAAAAAAAAAAAQAAAI=</HashCode>
+      <FileName>Utils\Global.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="13.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

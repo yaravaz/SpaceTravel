@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="spacetravel.Views.Controls.TourInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:spacetravel.Views.Controls" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             mc:Ignorable="d" Style="{StaticResource Page_Style}"
+             d:DesignHeight="700" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <materialDesign:PackIcon Kind="ArrowLeft" Margin="10,20,0,0" Width="30" Height="30" Foreground="White">
+            <materialDesign:PackIcon.Style>
+                <Style TargetType="materialDesign:PackIcon">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Cursor" Value="Hand" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </materialDesign:PackIcon.Style>
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDown">
+                    <i:InvokeCommandAction Command="{Binding GoBack}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </materialDesign:PackIcon>
+        <TextBlock Text="{Binding NameField, Mode=TwoWay}" Foreground="white" FontSize="30" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0" Grid.ColumnSpan="2" FontFamily="D-DIN"/>
+        <Image Source="{Binding CurrImage, Mode=TwoWay}" Grid.Column="0" Width="400" Height="300" Margin="20 100 0 0" VerticalAlignment="Top" Stretch="UniformToFill" />
+        <TextBlock Text="{Binding AddressField, Mode=TwoWay}" Foreground="white" Grid.Column="1" FontSize="20" Width="330" Height="60" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="40,100,0,0" FontFamily="D-DIN" />
+        <TextBlock Text="{Binding DateField, StringFormat={}{0:d}, Mode=TwoWay}" Foreground="white" Grid.Column="1" FontSize="20"  Width="330" Height="60" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="40,180,0,0" FontFamily="D-DIN" />
+        <TextBlock Text="{Binding PriceField, Mode=TwoWay}" Foreground="white" Grid.Column="1" FontSize="30" Width="330" Height="60"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="40,340,0,0" FontFamily="D-DIN" />
+        <TextBlock Text="{Binding DescriptionField, Mode=TwoWay}" Foreground="white" Grid.Column="0" Grid.ColumnSpan="2" Width="730" TextWrapping="Wrap" FontSize="18" Height="200" TextAlignment="Justify" HorizontalAlignment="Left" Margin="35,350,0,0" FontFamily="D-DIN" />
+        <TextBlock Text="{Binding TypeField}" Foreground="white" Grid.Column="1" FontSize="20" Width="330" Height="60" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="40,260,0,0" FontFamily="D-DIN" />
+        <TextBlock Text="{Binding ErrorText}" Margin="0 0 0 80"  HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="12" Foreground="#DDFF6565" Grid.ColumnSpan="2"/>
+        <Button Command="{Binding BookTourCommand}" CommandParameter="{Binding CurrTour.TourID}" Visibility="{Binding CurrVisibility}" FontSize="22" Content="Book" Grid.Column="0" Grid.ColumnSpan="2" Width="300" FontFamily="D-DIN" VerticalAlignment="Bottom" Margin="0 0 0 30" />
+    </Grid>
+</UserControl> 
