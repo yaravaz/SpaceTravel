@@ -194,8 +194,8 @@ namespace spacetravel.ViewModels.Menu
             string smtpServer = "smtp.mail.ru";
             int smtpPort = 587;
             string service = string.Empty;
-            string smtpUsername = "yaravazvov877@mail.ru";
-            string smtpPassword = "gTwVWEuSLQJwN78FKpmE";
+            string smtpUsername = "yourmail";
+            string smtpPassword = "yourpassword";
             Booking currBooking = Db.Bookings.FirstOrDefault(b => b.BookingID == (int)param);
             string UserName = Db.Users.FirstOrDefault(u => u.UserID == currBooking.User).Login;
             string Email = Db.Users.FirstOrDefault(u => u.UserID == currBooking.User).Email;
